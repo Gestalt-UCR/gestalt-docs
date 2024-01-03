@@ -1,0 +1,36 @@
+---
+title: Gestalt Docs
+description: Get started building your docs site with Starlight.
+template: splash
+hero:
+  tagline: Guides, resources, and API references for developing Gestalt.
+  image:
+    file: ../../assets/logo.png
+  actions:
+    - text: Get started
+      link: /guides/example/
+      icon: right-arrow
+      variant: primary
+    - text: View the source code
+      link: https://starlight.astro.build
+      icon: external
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## Useful guides
+
+<CardGrid stagger>
+	<Card title="Create courses" icon="pencil">
+		Learn how to create and manage courses in the [Course Creation](/guides/course-creation) guide.
+	</Card>
+	<Card title="Add new questions" icon="add-document">
+		Learn the basics of developing course questions and adding them to the question database with the [Question Creation](/guides/question-creation) guide.
+	</Card>
+	<Card title="Configure a deployment" icon="setting">
+		Learn about the fundamentals of deploying Gestalt on Google Cloud with the [Deployment](/guides/deployment) guide.
+	</Card>
+	<Card title="Read the docs" icon="open-book">
+		Learn more about developing and modifying the source code in [the references](/references/controllers).
+	</Card>
+</CardGrid>
