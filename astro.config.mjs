@@ -22,4 +22,5 @@ export default defineConfig({
 		}),
 	],
 	site: 'https://gestalt-ucr.github.io',
+	base: '/gestalt-docs/'
 });
